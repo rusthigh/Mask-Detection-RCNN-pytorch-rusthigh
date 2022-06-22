@@ -1,2 +1,4 @@
 ###############################################
-# pytorch Mask-RCNN based on torchvision mo
+# pytorch Mask-RCNN based on torchvision model
+# Amirhossein Heydarian
+########################
