@@ -6,4 +6,4 @@
 import torch
 import torchvision
 from torchvision.models.detection.faster_rcnn import FastRCNNPredictor
-from t
+from torchvision.models.detection.mask_rcnn import Mas
