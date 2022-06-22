@@ -11,4 +11,6 @@ from torchvision.transforms import functional as F
 import cv2
 import numpy as np
 
-device = torch.device('cuda') if torch.cuda.is_available() else torch.devic
+device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
+font = cv2.FONT_HERSHEY_SIMPLEX 
+fontScale =
