@@ -19,4 +19,6 @@ thickness = 3
 
 def get_instance_segmentation_model(num_classes):
     # load an instance segmentation model pre-trained on COCO
-    model = torchvision.
+    model = torchvision.models.detection.maskrcnn_resnet50_fpn()
+
+    # get the 
