@@ -17,4 +17,5 @@ fontScale = 2
 thickness = 3
 
 
-def get_instance_segmentation_model(
+def get_instance_segmentation_model(num_classes):
+    # load an instance segmentation mod
