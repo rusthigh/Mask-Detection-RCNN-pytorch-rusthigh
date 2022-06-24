@@ -22,4 +22,5 @@ def get_instance_segmentation_model(num_classes):
     model = torchvision.models.detection.maskrcnn_resnet50_fpn()
 
     # get the number of input features for the classifier
-    in_features = model.roi_heads.box_predictor.cls_score.in_feature
+    in_features = model.roi_heads.box_predictor.cls_score.in_features
+    # replace the pre-trained head with a ne
