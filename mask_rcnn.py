@@ -27,4 +27,6 @@ def get_instance_segmentation_model(num_classes):
     model.roi_heads.box_predictor = FastRCNNPredictor(in_features, num_classes)
 
     # now get the number of input features for the mask classifier
-    in_features_mask = model.roi_heads.mask_pred
+    in_features_mask = model.roi_heads.mask_predictor.conv5_mask.in_channels
+    hidden_layer = 256
+   
