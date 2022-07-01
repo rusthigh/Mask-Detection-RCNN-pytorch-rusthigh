@@ -32,4 +32,4 @@ def get_instance_segmentation_model(num_classes):
     # and replace the mask predictor with a new one
     model.roi_heads.mask_predictor = MaskRCNNPredictor(in_features_mask,
                                                        hidden_layer,
-  
+                                                
