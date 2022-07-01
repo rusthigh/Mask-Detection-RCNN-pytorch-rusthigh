@@ -30,4 +30,5 @@ def get_instance_segmentation_model(num_classes):
     in_features_mask = model.roi_heads.mask_predictor.conv5_mask.in_channels
     hidden_layer = 256
     # and replace the mask predictor with a new one
-    model.roi_heads.mask_predictor = MaskRCNNPredictor(i
+    model.roi_heads.mask_predictor = MaskRCNNPredictor(in_features_mask,
+                            
