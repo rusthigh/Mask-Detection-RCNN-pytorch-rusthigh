@@ -37,4 +37,5 @@ def get_instance_segmentation_model(num_classes):
 
 class segmentation_model():
     def __init__(self, model_path, num_classes):
-        self.model = get_instance_segmentatio
+        self.model = get_instance_segmentation_model(num_classes).to(device)
+        self.model.load_state_
