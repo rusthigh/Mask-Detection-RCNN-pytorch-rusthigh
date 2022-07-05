@@ -36,4 +36,5 @@ def get_instance_segmentation_model(num_classes):
     return model
 
 class segmentation_model():
-    def __init__(self, model_path, nu
+    def __init__(self, model_path, num_classes):
+        self.model = get_instance_segmentatio
