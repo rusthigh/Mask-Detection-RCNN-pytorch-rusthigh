@@ -46,4 +46,7 @@ class segmentation_model():
           image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
         img = F.to_tensor(image)
         with torch.no_grad():
-            prediction = self.model([img.to(device)
+            prediction = self.model([img.to(device)])
+        return prediction[0]
+
+def plot_masks(image, p
