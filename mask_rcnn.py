@@ -43,4 +43,5 @@ class segmentation_model():
         
     def detect_masks(self,image,rgb_image):
         if not(rgb_image):
-          ima
+          image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+        img =
