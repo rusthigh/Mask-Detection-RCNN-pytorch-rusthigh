@@ -41,4 +41,6 @@ class segmentation_model():
         self.model.load_state_dict(torch.load(model_path))
         self.model.eval()
         
-    def detect_masks(self,image,r
+    def detect_masks(self,image,rgb_image):
+        if not(rgb_image):
+          ima
