@@ -45,4 +45,5 @@ class segmentation_model():
         if not(rgb_image):
           image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
         img = F.to_tensor(image)
-        with torch.no_grad(
+        with torch.no_grad():
+            prediction = self.model([img.to(device)
