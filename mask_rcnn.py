@@ -49,4 +49,5 @@ class segmentation_model():
             prediction = self.model([img.to(device)])
         return prediction[0]
 
-def plot_masks(image, p
+def plot_masks(image, prediction, classes, th=.2):
+    masks = prediction['masks'][
