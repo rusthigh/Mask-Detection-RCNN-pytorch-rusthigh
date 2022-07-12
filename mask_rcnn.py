@@ -52,4 +52,5 @@ class segmentation_model():
 def plot_masks(image, prediction, classes, th=.2):
     masks = prediction['masks'][:, 0].cpu().detach().numpy()[np.where(prediction['scores'].cpu().detach().numpy()>th)]
     masks[masks<th] = 0
-    mask
+    masks[masks>=th] = 1.0
+    labels = predict
