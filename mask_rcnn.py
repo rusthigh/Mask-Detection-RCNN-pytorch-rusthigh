@@ -58,4 +58,5 @@ def plot_masks(image, prediction, classes, th=.2):
 
     copy_image = image.copy()
     alpha = 0.5
-  
+    for i in range(masks.shape[0]):
+        color = (np
