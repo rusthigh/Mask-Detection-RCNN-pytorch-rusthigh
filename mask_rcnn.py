@@ -54,4 +54,8 @@ def plot_masks(image, prediction, classes, th=.2):
     masks[masks<th] = 0
     masks[masks>=th] = 1.0
     labels = prediction['labels'].cpu().numpy()[np.where(prediction['scores'].cpu().detach().numpy()>th)]
-    scores = np.round(prediction['scores'].cpu().detach().numpy()[np.where(prediction['scores'].cpu().detach().numpy
+    scores = np.round(prediction['scores'].cpu().detach().numpy()[np.where(prediction['scores'].cpu().detach().numpy()>th)],2)
+
+    copy_image = image.copy()
+    alpha = 0.5
+  
