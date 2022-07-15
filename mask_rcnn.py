@@ -66,4 +66,4 @@ def plot_masks(image, prediction, classes, th=.2):
         #adding classes   
         args = np.where(masks[i]>0)
         ymin,ymax,xmin,xmax = args[0].min(),args[0].max(),args[1].min(),args[1].max()
-        copy_image = cv2.putText(copy_image, '{} ({})'.format(classes[int(labels[i])],str(scores[i])), (
+        copy_image = cv2.putText(copy_image, '{} ({})'.format(classes[int(labels[i])],str(scores[i])), (xmin+10, ymin+10), font, fontScale, (0,0,0), thi
