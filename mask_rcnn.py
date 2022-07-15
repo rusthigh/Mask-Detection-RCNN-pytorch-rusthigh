@@ -64,4 +64,5 @@ def plot_masks(image, prediction, classes, th=.2):
             copy_image[:, :, c] = np.where(masks[i] == 1.0, copy_image[:, :, c] * (1 - alpha) + alpha*color[c], copy_image[:, :, c])
 
         #adding classes   
-        arg
+        args = np.where(masks[i]>0)
+        ymin,ymax,xmin,
