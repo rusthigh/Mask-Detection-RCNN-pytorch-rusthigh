@@ -65,4 +65,4 @@ def plot_masks(image, prediction, classes, th=.2):
 
         #adding classes   
         args = np.where(masks[i]>0)
-        ymin,ymax,xmin,
+        ymin,ymax,xmin,xmax = args[0].min(),args[0].max(),args[1].min(),args[1]
