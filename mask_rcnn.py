@@ -61,4 +61,7 @@ def plot_masks(image, prediction, classes, th=.2):
     for i in range(masks.shape[0]):
         color = (np.random.randint(255),np.random.randint(255),np.random.randint(255))
         for c in range(3):
-            copy_image[:, :, c] = np.where(masks[i] == 1.0, copy_image[:, :, c] * (1 - alpha) + alpha*color[c], cop
+            copy_image[:, :, c] = np.where(masks[i] == 1.0, copy_image[:, :, c] * (1 - alpha) + alpha*color[c], copy_image[:, :, c])
+
+        #adding classes   
+        arg
