@@ -7,4 +7,5 @@ from mask_rcnn import segmentation_model, plot_masks
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--img', type=str, default='test_image.jpg', help='path to your test image')
-    parser.add_argument('--labels', type=str, default='./my_dataset/labels.txt', help='path to labels li
+    parser.add_argument('--labels', type=str, default='./my_dataset/labels.txt', help='path to labels list text file (labels.txt)')
+    parser.add_argument('--m
