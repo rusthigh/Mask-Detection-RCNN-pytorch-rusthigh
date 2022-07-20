@@ -12,4 +12,6 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
     
-    IM
+    IMAGE_PATH = args.img
+    MODEL_PATH = args.model
+    LAB
