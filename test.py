@@ -14,4 +14,6 @@ if __name__ == '__main__':
     
     IMAGE_PATH = args.img
     MODEL_PATH = args.model
-    LAB
+    LABEL_PATH = args.labels
+    
+    with open(LABEL_PATH,'r') as 
