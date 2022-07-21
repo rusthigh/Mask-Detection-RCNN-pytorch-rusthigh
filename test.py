@@ -16,4 +16,6 @@ if __name__ == '__main__':
     MODEL_PATH = args.model
     LABEL_PATH = args.labels
     
-    with open(LABEL_PATH,'r') as 
+    with open(LABEL_PATH,'r') as f:
+        lines = [line.rstrip() for line in f]
+ 
