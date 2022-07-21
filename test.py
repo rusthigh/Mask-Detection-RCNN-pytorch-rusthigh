@@ -20,4 +20,6 @@ if __name__ == '__main__':
         lines = [line.rstrip() for line in f]
     assert lines[0] == '__ignore__', """first line of labels file must be  \
                                         "__ignore__" (labelme labels.txt)"""
-    l
+    lines.pop(0) # remove first elements [__ignore__]
+    
+    num_class
