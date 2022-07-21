@@ -18,4 +18,4 @@ if __name__ == '__main__':
     
     with open(LABEL_PATH,'r') as f:
         lines = [line.rstrip() for line in f]
- 
+    assert lines[0] == '__ignore__', """first line of label
