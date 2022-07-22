@@ -25,4 +25,6 @@ if __name__ == '__main__':
     num_classes = len(lines)
     classes = dict(zip(range(num_classes),lines))
     
-    image = cv2.imread(IMAGE_PA
+    image = cv2.imread(IMAGE_PATH)
+    model = segmentation_model(MODEL_PATH,num_classes)
+    
