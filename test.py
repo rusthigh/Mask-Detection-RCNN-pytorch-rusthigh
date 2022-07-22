@@ -27,4 +27,4 @@ if __name__ == '__main__':
     
     image = cv2.imread(IMAGE_PATH)
     model = segmentation_model(MODEL_PATH,num_classes)
-    
+    pred = model.detect_masks(image, rgb_image=False)   # rgb_im
