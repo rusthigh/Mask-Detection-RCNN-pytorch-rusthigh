@@ -23,4 +23,6 @@ if __name__ == '__main__':
     lines.pop(0) # remove first elements [__ignore__]
     
     num_classes = len(lines)
-    classes = dict(zip(range(nu
+    classes = dict(zip(range(num_classes),lines))
+    
+    image = cv2.imread(IMAGE_PA
