@@ -22,4 +22,5 @@ if __name__ == '__main__':
                                         "__ignore__" (labelme labels.txt)"""
     lines.pop(0) # remove first elements [__ignore__]
     
-    num_class
+    num_classes = len(lines)
+    classes = dict(zip(range(nu
