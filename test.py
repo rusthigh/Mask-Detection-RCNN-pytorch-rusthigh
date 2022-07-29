@@ -35,3 +35,5 @@ if __name__ == '__main__':
     cv2.imwrite('./results/res.jpg', plotted)
 
     plt.figure(figsize=(16,12))
+    plt.imshow(plotted)
+    plt.show()
