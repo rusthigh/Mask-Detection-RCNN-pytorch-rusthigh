@@ -31,4 +31,5 @@ if __name__ == '__main__':
 
     plotted = plot_masks(image,pred,classes)
     
-    os.ma
+    os.makedirs('./results', exist_ok=True)
+    cv2.imwrite('./results/re
