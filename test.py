@@ -29,4 +29,6 @@ if __name__ == '__main__':
     model = segmentation_model(MODEL_PATH,num_classes)
     pred = model.detect_masks(image, rgb_image=False)   # rgb_image=False if loading image with cv2.imread()
 
-    plotted
+    plotted = plot_masks(image,pred,classes)
+    
+    os.ma
