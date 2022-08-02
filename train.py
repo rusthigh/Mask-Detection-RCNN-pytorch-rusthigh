@@ -11,4 +11,4 @@ from utils.model import get_instance_segmentation_model
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--data', type=str, default='my_dataset', help='dataset path')
-    parser.add_argument('--num_classes', type=int, default=11, hel
+    parser.add_argument('--num_classes', type=int, default=11, help='number of classes (background as a class)
