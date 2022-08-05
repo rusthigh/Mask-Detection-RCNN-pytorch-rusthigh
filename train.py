@@ -20,4 +20,6 @@ if __name__ == '__main__':
     args = parser.parse_args()
     
     DATASET_PATH = args.data
-    num_classes
+    num_classes = args.num_classes
+    num_epochs = args.num_epochs
+    bat
