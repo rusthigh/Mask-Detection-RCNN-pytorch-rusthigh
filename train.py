@@ -13,4 +13,5 @@ if __name__ == '__main__':
     parser.add_argument('--data', type=str, default='my_dataset', help='dataset path')
     parser.add_argument('--num_classes', type=int, default=11, help='number of classes (background as a class)')
     parser.add_argument('--num_epochs', type=int, default=150, help='number of epochs')
-    parser.add_argument('--batchsize', type=int, default=4, help=
+    parser.add_argument('--batchsize', type=int, default=4, help='batchsize')
+    parser.add_argument('--workers', type=i
