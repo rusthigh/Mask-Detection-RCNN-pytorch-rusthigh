@@ -17,4 +17,7 @@ if __name__ == '__main__':
     parser.add_argument('--workers', type=int, default=4, help='number of workers')
     
     device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
-    args = parser.par
+    args = parser.parse_args()
+    
+    DATASET_PATH = args.data
+    num_classes
