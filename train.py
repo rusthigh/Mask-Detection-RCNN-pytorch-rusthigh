@@ -16,4 +16,5 @@ if __name__ == '__main__':
     parser.add_argument('--batchsize', type=int, default=4, help='batchsize')
     parser.add_argument('--workers', type=int, default=4, help='number of workers')
     
-    device = torch.device('cuda') if torch.cuda.is_ava
+    device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
+    args = parser.par
