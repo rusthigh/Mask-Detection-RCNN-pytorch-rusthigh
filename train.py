@@ -27,4 +27,5 @@ if __name__ == '__main__':
     
     
     #DATASET
-    # use
+    # use our dataset and defined transformations
+    dataset = mask
