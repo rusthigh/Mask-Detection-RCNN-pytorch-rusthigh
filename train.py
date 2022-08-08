@@ -22,4 +22,6 @@ if __name__ == '__main__':
     DATASET_PATH = args.data
     num_classes = args.num_classes
     num_epochs = args.num_epochs
-    bat
+    batchsize = args.batchsize
+    workers = args.workers
+   
