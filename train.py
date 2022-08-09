@@ -28,4 +28,5 @@ if __name__ == '__main__':
     
     #DATASET
     # use our dataset and defined transformations
-    dataset = maskrcnn_Dataset(DATASET_PATH, get_transfo
+    dataset = maskrcnn_Dataset(DATASET_PATH, get_transform(train=True))
+    dataset_test = maskrcnn_Dataset(D
