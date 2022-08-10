@@ -35,4 +35,6 @@ if __name__ == '__main__':
     torch.manual_seed(1)
     indices = torch.randperm(len(dataset)).tolist()
     dataset = torch.utils.data.Subset(dataset, indices[:-int(0.3*len(dataset))])
-    dataset_test = torch.utils.data.Subset(dataset_test, 
+    dataset_test = torch.utils.data.Subset(dataset_test, indices[-int(0.3*len(dataset)):])
+
+    print('number of train 
