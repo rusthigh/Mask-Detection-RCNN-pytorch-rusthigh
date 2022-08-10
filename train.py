@@ -33,4 +33,5 @@ if __name__ == '__main__':
 
     # split the dataset in train and test set
     torch.manual_seed(1)
-    indices = t
+    indices = torch.randperm(len(dataset)).tolist()
+    dataset = torch.utils.dat
