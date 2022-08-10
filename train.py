@@ -31,4 +31,6 @@ if __name__ == '__main__':
     dataset = maskrcnn_Dataset(DATASET_PATH, get_transform(train=True))
     dataset_test = maskrcnn_Dataset(DATASET_PATH, get_transform(train=False))
 
-    # split the dataset in trai
+    # split the dataset in train and test set
+    torch.manual_seed(1)
+    indices = t
