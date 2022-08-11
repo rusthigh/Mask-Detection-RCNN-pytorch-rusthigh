@@ -38,4 +38,6 @@ if __name__ == '__main__':
     dataset_test = torch.utils.data.Subset(dataset_test, indices[-int(0.3*len(dataset)):])
 
     print('number of train data :', len(dataset))
-    print('number 
+    print('number of test data :', len(dataset_test))
+
+    # define t
