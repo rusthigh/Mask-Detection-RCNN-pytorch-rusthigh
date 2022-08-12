@@ -41,4 +41,5 @@ if __name__ == '__main__':
     print('number of test data :', len(dataset_test))
 
     # define training and validation data loaders
-    data_loader = tor
+    data_loader = torch.utils.data.DataLoader(
+        dataset, b
