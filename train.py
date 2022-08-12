@@ -42,4 +42,4 @@ if __name__ == '__main__':
 
     # define training and validation data loaders
     data_loader = torch.utils.data.DataLoader(
-        dataset, b
+        dataset, batch_size=batchsize, shuffle=True, num_workers=work
