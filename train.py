@@ -46,4 +46,4 @@ if __name__ == '__main__':
         collate_fn=utils.utils.collate_fn)
 
     data_loader_test = torch.utils.data.DataLoader(
-       
+        dataset_test, batch_size=1, shuffle=False, num_workers=worke
