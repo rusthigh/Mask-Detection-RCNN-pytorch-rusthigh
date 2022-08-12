@@ -40,4 +40,5 @@ if __name__ == '__main__':
     print('number of train data :', len(dataset))
     print('number of test data :', len(dataset_test))
 
-    # define t
+    # define training and validation data loaders
+    data_loader = tor
