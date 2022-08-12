@@ -50,3 +50,5 @@ if __name__ == '__main__':
         collate_fn=utils.utils.collate_fn)
 
 
+    # MASK-RCNN MODEL
+    # get the model using our he
