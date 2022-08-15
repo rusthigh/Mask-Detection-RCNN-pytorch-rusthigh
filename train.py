@@ -59,4 +59,5 @@ if __name__ == '__main__':
     optimizer = torch.optim.SGD(params, lr=0.005,
                                 momentum=0.9, weight_decay=0.0005)
 
-    # and a learning rate scheduler w
+    # and a learning rate scheduler which decreases the learning rate by
+    # 10x every 3 epo
