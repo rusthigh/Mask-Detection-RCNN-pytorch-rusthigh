@@ -60,4 +60,5 @@ if __name__ == '__main__':
                                 momentum=0.9, weight_decay=0.0005)
 
     # and a learning rate scheduler which decreases the learning rate by
-    # 10x every 3 epo
+    # 10x every 3 epochs
+    lr_scheduler = torch.optim.lr_scheduler.StepLR(optimiz
