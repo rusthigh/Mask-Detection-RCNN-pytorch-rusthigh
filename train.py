@@ -52,4 +52,7 @@ if __name__ == '__main__':
 
     # MASK-RCNN MODEL
     # get the model using our helper function
-    model = get_instance_segment
+    model = get_instance_segmentation_model(num_classes).to(device)
+
+    # construct an optimizer
+    para
