@@ -55,4 +55,5 @@ if __name__ == '__main__':
     model = get_instance_segmentation_model(num_classes).to(device)
 
     # construct an optimizer
-    params = [p for p in model.parameters() if p.requires_
+    params = [p for p in model.parameters() if p.requires_grad]
+    optimizer = torch.optim.SGD(params
