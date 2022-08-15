@@ -56,4 +56,5 @@ if __name__ == '__main__':
 
     # construct an optimizer
     params = [p for p in model.parameters() if p.requires_grad]
-    optimizer = torch.optim.SGD(params
+    optimizer = torch.optim.SGD(params, lr=0.005,
+                                moment
