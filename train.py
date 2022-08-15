@@ -62,4 +62,5 @@ if __name__ == '__main__':
     # and a learning rate scheduler which decreases the learning rate by
     # 10x every 3 epochs
     lr_scheduler = torch.optim.lr_scheduler.StepLR(optimizer,
-                                    
+                                                step_size=15,
+                                  
