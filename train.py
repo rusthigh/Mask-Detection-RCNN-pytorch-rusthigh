@@ -63,4 +63,8 @@ if __name__ == '__main__':
     # 10x every 3 epochs
     lr_scheduler = torch.optim.lr_scheduler.StepLR(optimizer,
                                                 step_size=15,
-                                  
+                                                gamma=0.1)
+
+    # TRAINING LOOP
+    
+    save_f
