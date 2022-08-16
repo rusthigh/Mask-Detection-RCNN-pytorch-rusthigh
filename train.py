@@ -72,4 +72,5 @@ if __name__ == '__main__':
     os.makedirs('./maskrcnn_saved_models', exist_ok=True)
 
     for epoch in range(num_epochs):
-        # tr
+        # train for one epoch, printing every 10 iterations
+    
