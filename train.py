@@ -68,4 +68,5 @@ if __name__ == '__main__':
     # TRAINING LOOP
     
     save_fr = 1
-    print_freq = 25  # make sure that print_freq is smaller 
+    print_freq = 25  # make sure that print_freq is smaller than len(dataset) & len(dataset_test)
+    os.ma
