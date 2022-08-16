@@ -67,4 +67,5 @@ if __name__ == '__main__':
 
     # TRAINING LOOP
     
-    save_f
+    save_fr = 1
+    print_freq = 25  # make sure that print_freq is smaller 
