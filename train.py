@@ -69,4 +69,6 @@ if __name__ == '__main__':
     
     save_fr = 1
     print_freq = 25  # make sure that print_freq is smaller than len(dataset) & len(dataset_test)
-    os.ma
+    os.makedirs('./maskrcnn_saved_models', exist_ok=True)
+
+    for epoch
