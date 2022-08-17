@@ -75,4 +75,5 @@ if __name__ == '__main__':
         # train for one epoch, printing every 10 iterations
         train_one_epoch(model, optimizer, data_loader, device, epoch, print_freq=print_freq)
         if epoch%save_fr == 0:
-            torch.save(model.state_dict(), './maskrcnn_saved_models/mask_rcnn_model_epoch_{}
+            torch.save(model.state_dict(), './maskrcnn_saved_models/mask_rcnn_model_epoch_{}.pt'.format(str(epoch)))
+        # update the lea
