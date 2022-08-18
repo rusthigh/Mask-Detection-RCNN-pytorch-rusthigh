@@ -192,3 +192,55 @@ def create_common_coco_eval(coco_eval, img_ids, eval_imgs):
     coco_eval.params.imgIds = img_ids
     coco_eval._paramsEval = copy.deepcopy(coco_eval.params)
 
+
+#################################################################
+# From pycocotools, just removed the prints and fixed
+# a Python3 bug about unicode not defined
+#################################################################
+
+# Ideally, pycocotools wouldn't have hard-coded prints
+# so that we could avoid copy-pasting those two functions
+
+def createIndex(self):
+    # create index
+    # print('creating index...')
+    anns, cats, imgs = {}, {}, {}
+    imgToAnns, catToImgs = defaultdict(list), defaultdict(list)
+    if 'annotations' in self.dataset:
+        for ann in self.dataset['annotations']:
+            imgToAnns[ann['image_id']].append(ann)
+            anns[ann['id']] = ann
+
+    if 'images' in self.dataset:
+        for img in self.dataset['images']:
+            imgs[img['id']] = img
+
+    if 'categories' in self.dataset:
+        for cat in self.dataset['categories']:
+            cats[cat['id']] = cat
+
+    if 'annotations' in self.dataset and 'categories' in self.dataset:
+        for ann in self.dataset['annotations']:
+            catToImgs[ann['category_id']].append(ann['image_id'])
+
+    # print('index created!')
+
+    # create class members
+    self.anns = anns
+    self.imgToAnns = imgToAnns
+    self.catToImgs = catToImgs
+    self.imgs = imgs
+    self.cats = cats
+
+
+maskUtils = mask_util
+
+
+def loadRes(self, resFile):
+    """
+    Load result file and return a result api object.
+    :param   resFile (str)     : file name of result file
+    :return: res (obj)         : result api object
+    """
+    res = COCO()
+    res.dataset['images'] = [img for img in self.dataset['images']]
