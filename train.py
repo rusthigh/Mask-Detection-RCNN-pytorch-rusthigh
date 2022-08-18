@@ -78,4 +78,5 @@ if __name__ == '__main__':
             torch.save(model.state_dict(), './maskrcnn_saved_models/mask_rcnn_model_epoch_{}.pt'.format(str(epoch)))
         # update the learning rate
         lr_scheduler.step()
-        # evalu
+        # evaluate on the test dataset
+        evaluate(model, data_loader_test
