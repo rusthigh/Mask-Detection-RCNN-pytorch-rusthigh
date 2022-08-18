@@ -79,4 +79,4 @@ if __name__ == '__main__':
         # update the learning rate
         lr_scheduler.step()
         # evaluate on the test dataset
-        evaluate(model, data_loader_test
+        evaluate(model, data_loader_test, device=device)
