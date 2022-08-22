@@ -344,3 +344,7 @@ def evaluate(self):
     # toc = time.time()
     # print('DONE (t={:0.2f}s).'.format(toc-tic))
     return p.imgIds, evalImgs
+
+#################################################################
+# end of straight copy from pycocotools, just removing the prints
+#################################################################
