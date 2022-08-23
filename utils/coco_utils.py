@@ -239,3 +239,14 @@ def get_coco(root, image_set, transforms, mode='instances'):
     ann_file = os.path.join(root, ann_file)
 
     dataset = CocoDetection(img_folder, ann_file, transforms=transforms)
+
+    if image_set == "train":
+        dataset = _coco_remove_images_without_annotations(dataset)
+
+    # dataset = torch.utils.data.Subset(dataset, [i for i in range(500)])
+
+    return dataset
+
+
+def get_coco_kp(root, image_set, transforms):
+    return get_coco(root, image_set, transforms, mode="person_keypoints")
