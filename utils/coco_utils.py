@@ -198,3 +198,44 @@ def convert_to_coco_api(ds):
 def get_coco_api_from_dataset(dataset):
     for i in range(10):
         if isinstance(dataset, torchvision.datasets.CocoDetection):
+            break
+        if isinstance(dataset, torch.utils.data.Subset):
+            dataset = dataset.dataset
+    if isinstance(dataset, torchvision.datasets.CocoDetection):
+        return dataset.coco
+    return convert_to_coco_api(dataset)
+
+
+class CocoDetection(torchvision.datasets.CocoDetection):
+    def __init__(self, img_folder, ann_file, transforms):
+        super(CocoDetection, self).__init__(img_folder, ann_file)
+        self._transforms = transforms
+
+    def __getitem__(self, idx):
+        img, target = super(CocoDetection, self).__getitem__(idx)
+        image_id = self.ids[idx]
+        target = dict(image_id=image_id, annotations=target)
+        if self._transforms is not None:
+            img, target = self._transforms(img, target)
+        return img, target
+
+
+def get_coco(root, image_set, transforms, mode='instances'):
+    anno_file_template = "{}_{}2017.json"
+    PATHS = {
+        "train": ("train2017", os.path.join("annotations", anno_file_template.format(mode, "train"))),
+        "val": ("val2017", os.path.join("annotations", anno_file_template.format(mode, "val"))),
+        # "train": ("val2017", os.path.join("annotations", anno_file_template.format(mode, "val")))
+    }
+
+    t = [ConvertCocoPolysToMask()]
+
+    if transforms is not None:
+        t.append(transforms)
+    transforms = T.Compose(t)
+
+    img_folder, ann_file = PATHS[image_set]
+    img_folder = os.path.join(root, img_folder)
+    ann_file = os.path.join(root, ann_file)
+
+    dataset = CocoDetection(img_folder, ann_file, transforms=transforms)
