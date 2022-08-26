@@ -100,3 +100,9 @@ def evaluate(model, data_loader, device):
     metric_logger.synchronize_between_processes()
     print("Averaged stats:", metric_logger)
     coco_evaluator.synchronize_between_processes()
+
+    # accumulate predictions from all images
+    coco_evaluator.accumulate()
+    coco_evaluator.summarize()
+    torch.set_num_threads(n_threads)
+    return coco_evaluator
