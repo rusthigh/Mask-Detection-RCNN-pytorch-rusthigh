@@ -12,3 +12,7 @@ def _flip_coco_person_keypoints(kps, width):
     inds = flipped_data[..., 2] == 0
     flipped_data[inds] = 0
     return flipped_data
+
+
+class Compose(object):
+    def __init__(self, transf
