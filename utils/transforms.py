@@ -15,4 +15,7 @@ def _flip_coco_person_keypoints(kps, width):
 
 
 class Compose(object):
-    def __init__(self, transf
+    def __init__(self, transforms):
+        self.transforms = transforms
+
+    def 
