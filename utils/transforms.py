@@ -18,4 +18,5 @@ class Compose(object):
     def __init__(self, transforms):
         self.transforms = transforms
 
-    def 
+    def __call__(self, image, target):
+        for t in 
