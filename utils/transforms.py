@@ -30,4 +30,4 @@ class RandomHorizontalFlip(object):
 
     def __call__(self, image, target):
         if random.random() < self.prob:
-     
+            height, width = image.shape[-2:]
