@@ -24,4 +24,6 @@ class Compose(object):
         return image, target
 
 
-class RandomHorizontalFlip(obje
+class RandomHorizontalFlip(object):
+    def __init__(self, prob):
+        self
