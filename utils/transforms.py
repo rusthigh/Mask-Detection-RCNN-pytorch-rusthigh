@@ -29,4 +29,5 @@ class RandomHorizontalFlip(object):
         self.prob = prob
 
     def __call__(self, image, target):
-  
+        if random.random() < self.prob:
+     
