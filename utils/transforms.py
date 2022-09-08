@@ -35,4 +35,5 @@ class RandomHorizontalFlip(object):
             bbox = target["boxes"]
             bbox[:, [0, 2]] = width - bbox[:, [2, 0]]
             target["boxes"] = bbox
-            if "masks"
+            if "masks" in target:
+                target["masks"] 
