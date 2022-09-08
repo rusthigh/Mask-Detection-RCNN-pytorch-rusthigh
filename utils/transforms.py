@@ -33,4 +33,6 @@ class RandomHorizontalFlip(object):
             height, width = image.shape[-2:]
             image = image.flip(-1)
             bbox = target["boxes"]
-            bbox[:, [0, 2]] = width - bbox[:, [2, 0]
+            bbox[:, [0, 2]] = width - bbox[:, [2, 0]]
+            target["boxes"] = bbox
+            if "masks"
