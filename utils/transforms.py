@@ -39,4 +39,5 @@ class RandomHorizontalFlip(object):
                 target["masks"] = target["masks"].flip(-1)
             if "keypoints" in target:
                 keypoints = target["keypoints"]
-                key
+                keypoints = _flip_coco_person_keypoints(keypoints, width)
+    
