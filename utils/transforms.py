@@ -38,4 +38,5 @@ class RandomHorizontalFlip(object):
             if "masks" in target:
                 target["masks"] = target["masks"].flip(-1)
             if "keypoints" in target:
-                ke
+                keypoints = target["keypoints"]
+                key
