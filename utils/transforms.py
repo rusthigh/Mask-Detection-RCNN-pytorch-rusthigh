@@ -40,4 +40,5 @@ class RandomHorizontalFlip(object):
             if "keypoints" in target:
                 keypoints = target["keypoints"]
                 keypoints = _flip_coco_person_keypoints(keypoints, width)
-    
+                target["keypoints"] = keypoints
+        return ima
