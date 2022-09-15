@@ -45,4 +45,5 @@ class RandomHorizontalFlip(object):
 
 
 class ToTensor(object):
-    def __call
+    def __call__(self, image, target):
+        image = F.to_tensor(image)
