@@ -41,4 +41,8 @@ class RandomHorizontalFlip(object):
                 keypoints = target["keypoints"]
                 keypoints = _flip_coco_person_keypoints(keypoints, width)
                 target["keypoints"] = keypoints
-        return ima
+        return image, target
+
+
+class ToTensor(object):
+    def __call
