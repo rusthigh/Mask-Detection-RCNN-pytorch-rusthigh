@@ -6,4 +6,4 @@ This project represents a Pytorch implementation of [Mask-RCNN](https://arxiv.or
 
 ## Training
 
-Collect and label your data with [labelme](https://github.com/wkentaro/label
+Collect and label your data with [labelme](https://github.com/wkentaro/labelme) and then export the VOC-format dataset from js
