@@ -13,4 +13,7 @@ Prepare your dataset following this format:
 ```
 my_dataset
       ├── labels.txt
-   
+      │
+      ├── JPEGImages
+      │       ├── image1.jpg
+      
