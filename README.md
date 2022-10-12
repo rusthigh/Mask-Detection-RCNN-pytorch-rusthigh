@@ -6,4 +6,6 @@ This project represents a Pytorch implementation of [Mask-RCNN](https://arxiv.or
 
 ## Training
 
-Collect and label your data with [labelme](https://github.com/wkentaro/labelme) and then export the VOC-format dataset from json files using [labelme2voc](https://github.com/wkentaro/labelme/tree/master/examples/instance_seg
+Collect and label your data with [labelme](https://github.com/wkentaro/labelme) and then export the VOC-format dataset from json files using [labelme2voc](https://github.com/wkentaro/labelme/tree/master/examples/instance_segmentation).
+
+Prepare your dataset following this
