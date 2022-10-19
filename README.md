@@ -22,4 +22,6 @@ my_dataset
       │       ├── image1.png
       │       └── image2.png
       │
-      └── S
+      └── SegmentationClass
+              ├── image1.png
+  
