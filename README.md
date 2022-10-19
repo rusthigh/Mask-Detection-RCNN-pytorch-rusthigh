@@ -18,4 +18,6 @@ my_dataset
       │       ├── image1.jpg
       │       └── image2.jpg
       │
-      ├── S
+      ├── SegmentationObject
+      │       ├── image1.png
+   
