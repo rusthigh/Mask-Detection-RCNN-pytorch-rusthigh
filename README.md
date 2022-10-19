@@ -16,4 +16,6 @@ my_dataset
       │
       ├── JPEGImages
       │       ├── image1.jpg
-      
+      │       └── image2.jpg
+      │
+      ├── S
