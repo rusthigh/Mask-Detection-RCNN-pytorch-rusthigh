@@ -20,4 +20,6 @@ my_dataset
       │
       ├── SegmentationObject
       │       ├── image1.png
-   
+      │       └── image2.png
+      │
+      └── S
