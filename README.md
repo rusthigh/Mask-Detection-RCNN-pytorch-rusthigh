@@ -37,4 +37,4 @@ Remember to include all `num_classes` which should include the background.
 
 ## Testing
 
-Modify the `classes` variable in `mas
+Modify the `classes` variable in `mask_rcnn.py` according to your object class
