@@ -30,4 +30,7 @@ my_dataset
 Once your repository is cloned and you have your `my_dataset` folder ready within the `Mask-Detection-RCNN-pytorch-rusthigh` directory, you can execute this command to start training:
 
 ```
-$ python3 train.py --data my_datase
+$ python3 train.py --data my_dataset --num_classes 11 --num_epochs 150
+```
+
+Remember to include 
