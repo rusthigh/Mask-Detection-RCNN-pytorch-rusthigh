@@ -27,4 +27,4 @@ my_dataset
               └── image2.png
 ```
 
-Once your repository 
+Once your repository is cloned and you have your `my_dataset` folder re
