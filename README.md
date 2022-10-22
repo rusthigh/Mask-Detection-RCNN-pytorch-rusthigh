@@ -33,4 +33,8 @@ Once your repository is cloned and you have your `my_dataset` folder ready withi
 $ python3 train.py --data my_dataset --num_classes 11 --num_epochs 150
 ```
 
-Remember to include all `num_classes` which should include the ba
+Remember to include all `num_classes` which should include the background.
+
+## Testing
+
+Modify the `classes` variable in `mas
