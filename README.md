@@ -27,4 +27,4 @@ my_dataset
               └── image2.png
 ```
 
-Once your repository is cloned and you have your `my_dataset` folder ready within the `Mask-Detection-RCNN-pytorch-rusthigh` dire
+Once your repository is cloned and you have your `my_dataset` folder ready within the `Mask-Detection-RCNN-pytorch-rusthigh` directory, you can execute this command to start 
