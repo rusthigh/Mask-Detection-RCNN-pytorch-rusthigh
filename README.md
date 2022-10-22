@@ -24,4 +24,7 @@ my_dataset
       │
       └── SegmentationClass
               ├── image1.png
-  
+              └── image2.png
+```
+
+Once your repository 
