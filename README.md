@@ -40,4 +40,7 @@ Remember to include all `num_classes` which should include the background.
 Modify the `classes` variable in `mask_rcnn.py` according to your object classes. Then use the following command to test on your image:
 
 ```
-$ python3 test.py --img test_img.jpg --mode
+$ python3 test.py --img test_img.jpg --model ./maskrcnn_saved_models/mask_rcnn_model.pt
+```
+
+Here a
