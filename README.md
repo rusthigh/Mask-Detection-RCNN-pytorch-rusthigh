@@ -43,4 +43,6 @@ Modify the `classes` variable in `mask_rcnn.py` according to your object classes
 $ python3 test.py --img test_img.jpg --model ./maskrcnn_saved_models/mask_rcnn_model.pt
 ```
 
-Here a
+Here are some sample output results:
+
+![res1](resu
